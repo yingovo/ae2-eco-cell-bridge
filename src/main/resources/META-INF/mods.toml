@@ -1,0 +1,43 @@
+modLoader="javafml"
+loaderVersion="[47,)"
+license="MIT"
+
+[[mods]]
+modId="ae2ecobridge"
+version="1.0.0"
+displayName="AE2 ECO Cell Bridge"
+authors="YingOvO"
+description='''
+让「按 AE2 标准 ICellHandler 注册」的存储元件可以插进 Neo ECO AE Extension 的存储矩阵驱动器（ECO - LD 存储矩阵驱动器）。
+
+典型例子：AE Tetra 的模块化存储元件。桥接后会沿用元件自己的容量与 key 类型，
+并尽可能沿用 ECO 自己的元件分类显示。
+'''
+
+[[dependencies.ae2ecobridge]]
+modId="forge"
+mandatory=true
+versionRange="[47,)"
+ordering="NONE"
+side="BOTH"
+
+[[dependencies.ae2ecobridge]]
+modId="minecraft"
+mandatory=true
+versionRange="[1.20.1,1.20.2)"
+ordering="NONE"
+side="BOTH"
+
+[[dependencies.ae2ecobridge]]
+modId="ae2"
+mandatory=true
+versionRange="[15.4.10,)"
+ordering="NONE"
+side="BOTH"
+
+[[dependencies.ae2ecobridge]]
+modId="neoecoae"
+mandatory=true
+versionRange="*"
+ordering="NONE"
+side="BOTH"
